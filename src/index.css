@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #FAFAF8;
+
+}
+
+.header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 11px;
+    box-shadow: 0px 1px 2px 0px #0000000F , 0px 1px 3px 0px #0000001A;
+    background-color: white;
+    height: 108px;
+   
+}
+
+.header-icon{
+    height: 50px;
+}
+
+.header-title{
+  color: #141413;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+main{
+  padding: 70px 30px 10px;
+}
+
+.add-ingredient-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  height: 38px;
+}
+
+.add-ingredient-form > input{
+    
+    padding: 9px 13px ;
+    border-radius: 6px;
+    min-width: 150px;
+    max-width: 400px;
+    flex-grow: 1;
+    border: 1px solid #D1D5DB;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+  }
+
+ .add-ingredient-form > button{
+    color:  #FAFAF8;
+    background-color: #141413;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    border: none;
+    width: 183px;
+    padding: 9px 17px;
+    border-radius: 6px;
+   }
+   
+  .add-ingredient-form > button::before{
+    content: "+";
+    margin-right: 5px;
+  }
+
+  .get-recipe-container{
+    background-color: #F0EFEB;
+    border-radius: 8px;
+    padding: 29px 42px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .get-recipe-container > button{
+    background-color: #D17557;
+    border-radius: 6px;
+    padding: 9px 17px;
+    color: #FAFAF8;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
+    border: none;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    cursor: pointer;
+  }
+
+  .get-recipe-container h3 {
+      color: #141413;
+      font-weight: 500;
+      font-size: 1.125rem;
+      margin-bottom: 0;
+  }
+
+   .get-recipe-container p{
+
+    color: #6B7280;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 8px; 
+  }
+
+  .ingredient-list li{
+      color: #475467;
+      font-weight: 400;
+      font-size: 1.125rem;
+      line-height: 28px;
+      margin-top: 18px;
+      margin-bottom: 0px;
+      }
+
+  ul.ingredient-list{
+    margin-bottom: 56px;
+  }
+
+  .suggested-recipe-container {
+    color: #475467;
+    line-height: 28px;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.suggested-recipe-container ul li, .suggested-recipe-container ol li {
+    margin-bottom: 8px;
+}
